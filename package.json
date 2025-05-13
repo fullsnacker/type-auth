@@ -1,0 +1,25 @@
+{
+  "name": "type-auth",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/inquirer": "^9.0.8",
+    "@types/node": "^22.15.17",
+    "@types/uuid": "^10.0.0",
+    "bcryptjs": "^3.0.2",
+    "chalk": "^5.4.1",
+    "figlet": "^1.8.1",
+    "inquirer": "^12.6.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "uuid": "^11.1.0"
+  }
+}
