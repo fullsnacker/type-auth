@@ -20,7 +20,7 @@
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/type-auth.git
+git clone https://github.com/fullsnacker/type-auth.git
 cd type-auth
 ```
 
