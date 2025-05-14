@@ -1,4 +1,4 @@
-# TermiAuth 🔒
+# TypeAuth 🔒
 
 **Terminal Authentication System with TypeScript and Clean Architecture**
 
@@ -102,20 +102,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Made with ❤️ by [Fullsnacker](https://fullsnacker.github.io)
 
 ---
-
-This README includes:
-
-- Visual badges
-- Clear installation instructions
-- Project structure
-- Architecture explanation
-- Visual roadmap
-- Contribution guide
-- License section
-
-You can customize it by adding:
-
-- Your own screenshots
-- Additional use case details
-- CI/CD badges if implementing pipelines
-- An architecture diagram

@@ -103,20 +103,3 @@ Distribuido bajo la licencia MIT. Consulta `LICENSE` para más información.
 Hecho con ❤️ por [Fullsnacker](https://fullsnacker.github.io)
 
 ---
-
-Este README incluye:
-
-- Badges visuales
-- Instrucciones claras de instalación
-- Estructura del proyecto
-- Explicación de la arquitectura
-- Roadmap visual
-- Guía de contribución
-- Sección de licencia
-
-Puedes personalizarlo añadiendo:
-
-- Tus propios screenshots
-- Información adicional sobre los casos de uso
-- Badges de CI/CD si implementas pipelines
-- Un diagrama de arquitectura
