@@ -5,7 +5,6 @@ export class AuthUseCase {
   constructor(private readonly userRepository: UserRepository) {}
 
   async register(username: string, password: string): Promise<User> {
-    // Validaciones de negocio aquí
     if (!username || !password) {
       throw new Error("Username and password are required");
     }
@@ -15,11 +14,10 @@ export class AuthUseCase {
       throw new Error("Username already exists");
     }
 
-    // La encriptación real se hará en la capa de infraestructura
     const user: User = {
       id: this.generateUserId(),
       username,
-      passwordHash: password, // Esto será encriptado después
+      passwordHash: password,
       createdAt: new Date(),
     };
 
@@ -32,7 +30,6 @@ export class AuthUseCase {
       throw new Error("User not found");
     }
 
-    // Corregimos aquí - delegamos al repositorio
     const isValid = await this.userRepository.verifyPassword(password, user.passwordHash);
     if (!isValid) {
       throw new Error("Invalid password");
@@ -42,7 +39,6 @@ export class AuthUseCase {
   }
 
   private generateUserId(): string {
-    // Implementación real en infraestructura
     return "temp-id";
   }
 }

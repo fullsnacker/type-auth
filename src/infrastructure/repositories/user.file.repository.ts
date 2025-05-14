@@ -31,7 +31,6 @@ export class UserFileRepository implements UserRepository {
   }
 
   async createUser(user: User): Promise<User> {
-    // Encriptar la contraseña antes de guardar
     const salt = await bcrypt.genSalt(10);
     const passwordHash = await bcrypt.hash(user.passwordHash, salt);
 
