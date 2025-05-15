@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && node dist/main.js",
+    "start": "npm run build && node dist/main.js --api",
     "dev": "ts-node src/main.ts",
+    "dev-server": "ts-node src/main.ts --api",
     "build": "tsc",
     "clean": "rimraf dist",
     "prebuild": "npm run clean"
@@ -15,6 +16,7 @@
   "description": "",
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
+    "@types/express": "^5.0.1",
     "@types/figlet": "^1.7.0",
     "@types/inquirer": "^9.0.8",
     "@types/node": "^22.15.17",
@@ -26,5 +28,9 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
     "uuid": "^11.1.0"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "zod": "^3.24.4"
   }
 }

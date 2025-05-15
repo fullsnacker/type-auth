@@ -1,0 +1,44 @@
+[
+  {
+    "id": "895aa17c-bfac-4a6f-889f-fec75fbe2075",
+    "username": "pepe",
+    "passwordHash": "$2b$10$.TFrsJWhIvY8Vc.nG79D7OMwJdXSF4WneYGJjvYMxxGP.BmtHShB6",
+    "createdAt": "2025-05-15T14:23:09.173Z"
+  },
+  {
+    "id": "9488e04b-6ce6-4960-a8b8-0285c4d21499",
+    "username": "juan",
+    "passwordHash": "$2b$10$bryuzPJXOKSiMQkkTVk9..aOcJxOkjdE3A1azVfPjWxwGtjlPqiny",
+    "createdAt": "2025-05-15T14:23:15.802Z"
+  },
+  {
+    "id": "88c471e7-1b93-4d86-996c-9d708df3839b",
+    "username": "jose",
+    "passwordHash": "$2b$10$smw62D86VJJavZgfmmunxO9x7pJlNe.3UyB4WTf.Qti/RhaWz68ES",
+    "createdAt": "2025-05-15T14:23:27.787Z"
+  },
+  {
+    "id": "b46aec31-343d-4e8c-b861-b274c1cd5f61",
+    "username": "pepeloko",
+    "passwordHash": "$2b$10$JWWtydrD5aLmzUwD9FJVhOTHka0jsHyuirlCmtksu9lv3iHYSA2E2",
+    "createdAt": "2025-05-15T14:26:49.064Z"
+  },
+  {
+    "id": "a0470c33-61ca-443b-84a1-34937e15fb14",
+    "username": "fullsnacker",
+    "passwordHash": "$2b$10$hgvhgrpK7IaQirYFMBOfMO4Kg6VZZEhH8xJxVgw5BhGp8/ZM3.QGO",
+    "createdAt": "2025-05-15T14:38:11.092Z"
+  },
+  {
+    "id": "275d262f-3b4b-4c31-9091-c5ff0a6d1e39",
+    "username": "pepeloko3",
+    "passwordHash": "$2b$10$cjMC0gkwdKt3XcmpYD9BbuoCcsPP9iUC4rNqjpnAlctbonjWv4rSW",
+    "createdAt": "2025-05-15T15:10:03.450Z"
+  },
+  {
+    "id": "da39a773-2efa-4919-826f-d1d7a8e94506",
+    "username": "pepeloko4",
+    "passwordHash": "$2b$10$6qM/GiUjfhfO43haD49Tj.m8KfxioQ1CsD2lv8KXJO7uvNBtHl99O",
+    "createdAt": "2025-05-15T15:11:57.306Z"
+  }
+]

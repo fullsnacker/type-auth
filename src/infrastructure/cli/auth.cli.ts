@@ -10,7 +10,9 @@ export class AuthCLI {
   constructor(private authUseCase: AuthUseCase) {}
 
   async start() {
-    console.log(chalk.green(figlet.textSync("Auth System", { horizontalLayout: "full" })));
+    console.clear();
+    
+    console.log(chalk.green(figlet.textSync("Type Auth", { horizontalLayout: "full" })));
 
     while (true) {
       if (!this.currentUser) {
