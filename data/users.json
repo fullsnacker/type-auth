@@ -58,5 +58,11 @@
     "username": "pepeloko7",
     "passwordHash": "$2b$10$HBtoBstgzJ0ezkVBt11CBOxBc9NaIpx/oGv4OCLRhv.EhCnQk3QwS",
     "createdAt": "2025-05-15T17:44:24.117Z"
+  },
+  {
+    "id": "7b9b7066-6794-4fb7-a3a5-ec93b71281e1",
+    "username": "pepeloko8",
+    "passwordHash": "$2b$10$EbzLki/vB11ML3qqcfD67ePMlAh7ZEfY6nom8FblzOFbzU8E5wJE.",
+    "createdAt": "2025-05-15T17:48:59.413Z"
   }
 ]
