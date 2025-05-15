@@ -78,6 +78,7 @@ Las dependencias fluyen hacia el centro (dominio), manteniendo el negocio indepe
 
 ## 📝 Roadmap
 
+- [x] Server express para manejar usuarios con endpoints
 - [ ] Migración a base de datos SQL/NoSQL
 - [ ] Implementación de JWT para sesiones
 - [ ] Añadir sistema de roles

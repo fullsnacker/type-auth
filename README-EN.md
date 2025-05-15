@@ -77,6 +77,7 @@ Dependencies flow inward (toward the domain), keeping business logic independent
 
 ## 📝 Roadmap
 
+- [x] Express server for user management through endpoints
 - [ ] Database migration (SQL/NoSQL)
 - [ ] JWT session implementation
 - [ ] Role-based system
