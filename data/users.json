@@ -40,5 +40,23 @@
     "username": "pepeloko4",
     "passwordHash": "$2b$10$6qM/GiUjfhfO43haD49Tj.m8KfxioQ1CsD2lv8KXJO7uvNBtHl99O",
     "createdAt": "2025-05-15T15:11:57.306Z"
+  },
+  {
+    "id": "3f6e8c3a-25a5-48a9-9851-a3100b11287a",
+    "username": "username",
+    "passwordHash": "$2b$10$QxprQqmWim6MwzxCTZWnduRRkdC6Io5C4uCy7RIojjyEJ3Uo3keUK",
+    "createdAt": "2025-05-15T17:32:03.991Z"
+  },
+  {
+    "id": "8fe0e013-cf7c-419d-a5eb-55603f9e5cc8",
+    "username": "pepeloko6",
+    "passwordHash": "$2b$10$VxZ3JQhyX5ScPm.knIjsOORIp.iT02bRFZTwjZu6Q9ullnIlL3dBu",
+    "createdAt": "2025-05-15T17:43:37.455Z"
+  },
+  {
+    "id": "ad591f26-e088-4584-a54c-2f18028fe3f7",
+    "username": "pepeloko7",
+    "passwordHash": "$2b$10$HBtoBstgzJ0ezkVBt11CBOxBc9NaIpx/oGv4OCLRhv.EhCnQk3QwS",
+    "createdAt": "2025-05-15T17:44:24.117Z"
   }
 ]

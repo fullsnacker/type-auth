@@ -1,5 +1,6 @@
 import { UserRepository } from "../repositories/user.repository";
 import { User } from "../entities/user";
+import { authSchema } from "../validators/auth.validators";
 
 export class AuthUseCase {
   constructor(private readonly userRepository: UserRepository) {}
@@ -13,6 +14,8 @@ export class AuthUseCase {
     if (existingUser) {
       throw new Error("Username already exists");
     }
+
+    authSchema.parse({ username, password });
 
     const user: User = {
       id: this.generateUserId(),

@@ -1,20 +1,23 @@
-import { Request, Response, NextFunction } from 'express';
-import { AnyZodObject } from 'zod';
+import { Request, Response, NextFunction } from "express";
+import { authSchema } from "../../../core/validators/auth.validators";
 
-export function validateRequest(schema: AnyZodObject) {
-  return (req: Request, res: Response, next: NextFunction) => {
-    try {
-      schema.parse({
-        username:req.body.username,
-        password:req.body.password,
-      });
-      next();
-    } catch (error) {
-      if (error instanceof Error && 'errors' in error) {
-        res.status(400).json({ error: (error as any).errors });
-      } else {
-        res.status(400).json({ error: 'An unknown error occurred' });
-      }
-    }
-  };
-}
+export const validateAuthInput = (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  const result = authSchema.safeParse(req.body);
+
+  if (!result.success) {
+    return res.status(400).json({
+      status: "error",
+      errors: result.error.errors.map((err) => ({
+        path: err.path.join("."),
+        message: err.message,
+      })),
+    });
+  }
+
+  (req as any).validatedData = result.data;
+  next();
+};

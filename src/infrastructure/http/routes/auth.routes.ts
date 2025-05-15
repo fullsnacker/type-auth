@@ -1,7 +1,7 @@
-import { Router } from 'express';
-import { AuthController } from '../controllers/auth.controller';
-import { registerSchema, loginSchema } from '../validators/auth.validators';
-import { validateRequest } from '../middlewares/validation.middlewares';
+import { Router } from "express";
+import { AuthController } from "../controllers/auth.controller";
+import { validateAuthInput } from "../middlewares/validation.middlewares";
+import { RequestHandler } from "express";
 
 export function createAuthRoutes(authController: AuthController) {
   const router = Router();
@@ -25,9 +25,16 @@ export function createAuthRoutes(authController: AuthController) {
    *         description: Invalid input
    */
   router.post(
-    '/register',
-    validateRequest(registerSchema),
-    authController.register.bind(authController)
+    "/register",
+    validateAuthInput as RequestHandler,
+    async (req, res, next) => {
+      try {
+        await authController.register(req, res);
+        next();
+      } catch (error) {
+        next(error);
+      }
+    }
   );
 
   /**
@@ -48,11 +55,7 @@ export function createAuthRoutes(authController: AuthController) {
    *       401:
    *         description: Invalid credentials
    */
-  router.post(
-    '/login',
-    validateRequest(loginSchema),
-    authController.login.bind(authController)
-  );
+  router.post("/login", authController.login.bind(authController));
 
   /**
    * @openapi
@@ -68,10 +71,7 @@ export function createAuthRoutes(authController: AuthController) {
    *       401:
    *         description: Unauthorized
    */
-  router.post(
-    '/logout',
-    authController.logout.bind(authController)
-  );
+  router.post("/logout", authController.logout.bind(authController));
 
   return router;
 }

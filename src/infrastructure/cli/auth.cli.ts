@@ -3,6 +3,7 @@ import chalk from "chalk";
 import figlet from "figlet";
 import { AuthUseCase } from "../../core/usecases/auth.usecase";
 import { User } from "../../core/entities/user";
+import { validateCLIInput } from "./validators/auth.validators";
 
 export class AuthCLI {
   private currentUser: User | null = null;
@@ -104,6 +105,7 @@ export class AuthCLI {
     ]);
 
     try {
+      validateCLIInput({ username, password });
       await this.authUseCase.register(username, password);
       console.log(chalk.green("Registration successful! You can now login."));
     } catch (error) {
